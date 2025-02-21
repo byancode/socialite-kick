@@ -64,7 +64,7 @@ For proper operation make sure you have the following permissions/scopes approve
 # Returned User Fields
 
 - id
-- username (requires the permission/scope `user.info.profile`)
+- username (requires the permission/scope `user:read`)
 - union_id
 - name
 - avatar
