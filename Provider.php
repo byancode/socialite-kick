@@ -13,6 +13,8 @@ class Provider extends AbstractProvider
 {
     public const IDENTIFIER = 'KICK';
 
+    protected $scopeSeparator = ' ';
+
     protected $scopes = [
         'user:read',
     ];
