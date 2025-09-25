@@ -123,4 +123,16 @@ class Provider extends AbstractProvider
             'Content-Type' => 'application/x-www-form-urlencoded',
         ];
     }
+
+    /**
+     * Override default scope formatting - Kick requires space-separated scopes per OAuth 2.1 spec.
+     *
+     * @param  array  $scopes
+     * @param  string  $scopeSeparator
+     * @return string
+     */
+    protected function formatScopes(array $scopes, $scopeSeparator)
+    {
+        return implode(' ', $scopes);
+    }
 }
